@@ -5,6 +5,8 @@ class TreeNode:
 
   def add_child(self, child_node):
     # creates parent-child relationship
+    if child_node in self.children:
+        return
     print("Adding " + child_node.value)
     self.children.append(child_node)
 
